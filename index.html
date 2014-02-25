@@ -36,8 +36,8 @@
 		<iframe id="video" frameborder="0"></iframe>
 		<script>
 			var videoId = window.location.search.substr(1,200) || "oKDnGyjoNWY";
-			var videoLoop="1";
-			var videoHD="1";
+			var videoLoop = "1";
+			var videoHD = "1";
 
 			function startVideo(id, loop, hd) {
 				document.getElementById("video").src="http://www.youtube.com/embed/"+id+"?autoplay=1&autohide=1&loop="+loop+"&hd="+hd;
