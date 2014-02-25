@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>youtube playback</title>
+		<meta name="language" content="en" />
+		<meta name="description" content="youtupe fullwindow playback example" />
+ 		<meta name="keywords" content="" />
+		<meta name="title" content="youtube playback" />
+		<meta name="author" content="Mr. Pi <mrpi@mr-pi.de>" />
+		<meta name="publisher" content="Mr. Pi" />
+		<meta name="copyright" content="Mr. Pi, 2014" />
+		<meta name="abstract" content="youtupe fullwindow playback example" />
+		<meta name="page-topic" content="" />
+		<meta name="page-type" content="" />
+		<meta name="audience" content="" />
+		<meta name="revisit" content="180 days" />
+		<meta name="revisit-after" content="180 days" />
+		<meta name="robots" content="index, follows" />
+		<style>
+			html, body, #video {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				left: 0px;
+				bottom: 0px;
+				height: 100%;
+				width: 100%;
+				border: 0px;
+				padding: 0px;
+				margin: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<iframe id="video" frameborder="0"></iframe>
+		<script>
+			var videoId = window.location.search.substr(1,200) || "oKDnGyjoNWY";
+			var videoLoop="1";
+			var videoHD="1";
+
+			function startVideo(id, loop, hd) {
+				document.getElementById("video").src="http://www.youtube.com/embed/"+id+"?autoplay=1&autohide=1&loop="+loop+"&hd="+hd;
+			}
+
+			startVideo(videoId, videoLoop, videoHD);
+		</script>
+	</body>
+</html>
