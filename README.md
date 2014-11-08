@@ -1,11 +1,11 @@
 youtube_playback
 ================
 
-youtupe fullwindow playback example
+YouTube fullwindowed example
 
-HOWTO USE:
-----------
+USEAGE:
+-------
 
-Just open `index.html?videoID` in your browser (example: `file:///home/mrpi/hg/youtube_playback/index.html?Kdgt1ZHkvnM`)
+Just open `index.html?videoID` at your browser (for example: `file:///home/user/youtube_playback/index.html?Kdgt1ZHkvnM`)
 
-In addition you can set a default video and the booleans(nummeric) hd and loop, just open `index.html` with a text editor and update `videoId`, `videoLoop` or `videoHD`.
+In addition you can set a default video to play and the Boolean options(numeric) hd and loop by editing `index.html` and updating the values of `videoId`, `videoLoop` and `videoHD`.
